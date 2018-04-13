@@ -28,7 +28,7 @@ class RunTests(Command):
 
     def run(self):
         """Run all tests!"""
-        errno = call(['py.test', '--cov=placeholder_name', '--cov-report=term-missing'])
+        errno = call(['pytest', '--cov=placeholder_name', '--cov-report=term-missing'])
         raise SystemExit(errno)
 
 

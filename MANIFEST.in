@@ -1,6 +1,8 @@
 include README.md
 include setup.cfg
+recursive-include tests *
 exclude .gitignore
+recursive-exclude *.egg-info *
 prune .git
 prune .cache
 prune build
